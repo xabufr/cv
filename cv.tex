@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}                
 \usepackage[utf8]{inputenc}
+\usepackage{textcomp}
 \usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
  
 \usepackage[french]{babel}     % prend en charge les spécificités du français
@@ -25,11 +26,40 @@
 \address{40 rue Poujeau}{33200 Bordeaux}
 \email{thomas.loubiou@yahoo.com}
 \social[github]{xabufr}
-\mobile{06 60 91 00 94} 
-\extrainfo{\FPtrunc\myage{\myage}{0}\myage\ ans -- Permis B}
+\mobile{06 60 91 00 94}
+\extrainfo{\FPtrunc\myage{\myage}{0}\myage\ ans --- Permis B}
 \begin{document}
-\makecvtitle
+\makecvtitle%
 \section{Formation}
-\cventry{2012 -- 2013}{Licence Professionnelle}{IUT Clermont-Ferrand (63)}{}{}{Spécialité Administration et Sécurité des Réseaux}
+\cventry{2012--2015}{Cycle d'Ingénierie Informatique}{EPSI Bordeaux}{}{}{Option Génie Logiciel}
+\cventry{2012}{BTS Informatique de Gestion}{EPSI Bordeaux}{}{}{Option Développeur d'applications}
+\cvitemwithcomment{Anglais}{Documentation technique, lu, écrit, TOEIC}{Bonne compréhension à l'écrit}
+\section{Compétences}
+\cvitem{C}{SDL, libssh2, GTK, liblua, argp}
+\cvitem{Python}{Version 3, PyQt, Tk, Opencv}
+\cvitem{C++14}{Qt4/5, Boost, SFML, Ogre3D, Bullet Physics, Box2D, MySQL++, TinyXML, RapidXML, GSoap, FMODEx, tolua++, CEGUI, OpenCV, Google ProtoBuf}
+\cvitem{Java}{Version 8, Swing, Spring, Hibernate, Jackson, LiquiBase, Jersey, Spring, Hadoop, DropWizard, JRuby, JUnit, Mockito, JCommander}
+\cvitem{Autres}{Web, ECMAScript 5 et 6, PHP5, HTML, CSS, REST, SOAP, OAuth2, JSON, XML, Ajax, AngularJS, Merise, UML, SQL, PHP5, Symfony 1\&2}
+\cvitem{Cloud AWS}{EC2, CloudFormation, S3, IAM, EMR, EBS, OpsWork, SNS, CloudWatch}
+\cvitem{Logiciels}{Vim (NeoVim), Eclipse, WebStorm, IntelliJ IDEA, Make, GCC, Clang, Gulp, Maven, NodeJS, PhantomJS, QtCreator, CLion, KDevelop, Git, CMake, GDB, Valgrind, Docker, Latex, Pandoc, ElasticSearch, MySQL, SSH, LibreOffice, Jenkins, SonarQube, Sonatype Nexus, GitLab}
+\cvitem{Systèmes d'exploitation}{Gentoo \& Funtoo, ArchLinux, Debian, Fedora, Mandriva, CentOS, Ubuntu, Microsoft Windows}
+\section{Expériences Professionnelles}
+\cventry{2013--2015}{Développeur}{Systonic}{Pessac}{KeepAlert \& Prodomaines}{Réalisation de nombreux projets, dont projets de R\&D\@:
+\begin{itemize}
+    \item Rédaction d'un article pour Programmez! (\textnumero170--171) sur l'utilisation des annotations et de l'introspection en Java,
+    \item Développement d'une solution basée sur de l'OCR,
+    \item Modernisation des outils utilisés par l'équipe de développement (Git, Maven, Jenkins),
+    \item Migration de la plateforme KeepAlert dans le Cloud d'Amazon (Hadoop, ElasticSearch),
+    \item Mise en place de système d'intégration continue basé sur Jenkins,
+    \item Développement d'API RESTful pour les extranets KeepAlert \& Prodomaines,
+    \item Début de moteur de recherche d'image (CBIR),
+    \item Création d'un langage de script pour le web-scraping
+\end{itemize}
+}
+\cventry{2012--7 sem.}{Développeur Web}{Goûts de Web}{Bordeaux}{}{Développement d'un site web de petites annonces --- \url{marseille-culture13.fr}}
+\cventry{2010--7 sem.}{Développeur}{EPSI Bordeaux}{}{}{Développement d'une application de gestion des absences et des notes pour les enseignants}
+\section{Centres d'intérêt}
+\cvitem{Sports}{Pratique régulièrement Planche à voile, VTT, Vélo, Escalade en club}
+\cvitem{Lectures}{Veille technologique, Romans d'Heroic Fantasy, Ouvrages informatiques}
 \end{document}
 
