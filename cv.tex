@@ -2,17 +2,34 @@
 \moderncvtheme[blue]{classic}                
 \usepackage[utf8]{inputenc}
 \usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+ 
+\usepackage[french]{babel}     % prend en charge les spécificités du français
+ 
+\usepackage{lmodern}           % charge les polices LatinModern appropriées pour un rendu PDF
+
 \setlength{\hintscolumnwidth}{2.5cm}
+
+\usepackage{datenumber,fp}
+
+\newcounter{dateofbirth}
+\newcounter{dateoftoday}
+
+\setmydatenumber{dateofbirth}{1992}{07}{02}
+\setmydatenumber{dateoftoday}{\the\year}{\the\month}{\the\day}
+\FPsub\result{\thedateoftoday}{\thedateofbirth}
+\FPdiv\myage{\result}{365.2425}
 
 \firstname{Thomas}
 \familyname{Loubiou}
 \title{Coucou}
 \address{40 rue Poujeau}{33200 Bordeaux}
 \email{thomas.loubiou@yahoo.com}
-\homepage{github.com/xabufr}
+\social[github]{xabufr}
 \mobile{06 60 91 00 94} 
-\extrainfo{22 ans -- Permis B}
+\extrainfo{\FPtrunc\myage{\myage}{0}\myage\ ans -- Permis B}
 \begin{document}
-\maketitle
+\makecvtitle
+\section{Formation}
+\cventry{2012 -- 2013}{Licence Professionnelle}{IUT Clermont-Ferrand (63)}{}{}{Spécialité Administration et Sécurité des Réseaux}
 \end{document}
 
