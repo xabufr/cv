@@ -15,6 +15,8 @@
 \newcounter{dateofbirth}
 \newcounter{dateoftoday}
 
+\linespread{1.1}
+
 \setmydatenumber{dateofbirth}{1992}{07}{02}
 \setmydatenumber{dateoftoday}{\the\year}{\the\month}{\the\day}
 \FPsub\result{\thedateoftoday}{\thedateofbirth}
@@ -22,32 +24,32 @@
 
 \firstname{Thomas}
 \familyname{Loubiou}
-\title{Directeur technique Zyps}
+\title{{\Large Développeur Backend, disponible janvier 2020}}
 \address{1 Allée Marie Louise}{}{92290 Chatenay-Malabry}
 \email{thomas.loubiou@yahoo.com}
 \social[github]{xabufr}
 \mobile{06 60 91 00 94}
-\extrainfo{\FPtrunc\myage{\myage}{0}\myage\ ans --- Permis A2/B}
+\extrainfo{\FPtrunc\myage{\myage}{0}\myage\ ans --- Permis A \& B}
 \photo[64pt][0.4pt]{photo}
+
 \begin{document}
 \makecvtitle%
-\section{Formation}
-\cventry{2012--2015}{Cycle d'Ingénierie Informatique}{EPSI Bordeaux}{}{}{Option Génie Logiciel, diplôme d'Expert en Informatique et Systèmes d'Information}
-\cventry{2012}{BTS Informatique de Gestion}{EPSI Bordeaux}{}{}{Option Développeur d'applications}
-\cvitemwithcomment{Anglais}{Documentation technique, lu, écrit, TOEIC}{Bonne compréhension à l'écrit}
-\section{Compétences principales}
-\cvitem{Langages}{Erlang, Rust, Kotlin, Java, Python 3, JavaScript, TypeScript, C++14, C, HTML, CSS, SQL}
-\cvitem{Divers}{Vim, NeoVim, Spacemacs, bash, zsh, Eclipse, IntelliJ IDEA, Make, GCC, Clang, Gulp, Maven, NodeJS, PhantomJS, Electron, QtCreator, KDevelop, Git, CMake, Docker, Kubernetes, Latex, Pandoc, ElasticSearch, MySQL, Postgresql, Redis, SSH, Jenkins, RabbitMQ, Cloud AWS, WebComponents}
-\cvitem{O.S.}{Gentoo \& Funtoo, ArchLinux, Debian, Fedora, Mandriva, CentOS, Ubuntu}
-\cvitem{Pratiques}{TDD, Clean Code}
+\vspace*{-1.5\baselineskip}
 \section{Expériences Professionnelles}
+\cventry{2018--Aujourd'hui}{Directeur Technique}{Zyps}{}{}{
+  \begin{itemize}
+  \item Mise en place de l'infrastructure (Ubuntu, Kubernetes on BareMetal)
+  \item Architecture logicielle
+  \item Développement backend (Rust, Typescript, Python, Postgres, ElasticSearch, RabbitMQ)
+  \end{itemize}
+}
 \cventry{2018--2019}{Développeur fullstack}{Corporama}{}{}{Développement et maintenance de Corporama (Erlang et jQuery)}
 \cventry{2015--2018}{Développeur, Responsable recherche et développement}{Systonic}{}{KeepAlert}{Missions diverses
 \begin{itemize}
     \item Amélioration des outils internes {\tiny -- Java}
     \item Début de moteur de recherche d'image (CBIR) et autres missions de R\&D {\tiny -- C++, Python},
     \item Écriture d'un moteur de Web-Scraping, création d'un pseudo-langage descriptif dédié {\tiny -- TypeScript},
-    \item Création de la version 2 de la plateforme KeepAlert {\tiny -- Java, Kotlin}
+    \item Création de la version 2 de la plateforme KeepAlert {\tiny -- Java, Kotlin, Spring Boot, Cloud AWS, Kubernetes}
 \end{itemize}
 }
 \cventry{2013--2015}{Développeur en alternance}{Systonic}{}{KeepAlert \& Prodomaines}{Réalisation de nombreux projets\@:
@@ -61,8 +63,17 @@
 }
 \cventry{2012}{Développeur Web}{Goûts de Web}{Bordeaux}{Stage 7 semaines}{Développement d'un site web de petites annonces -- {\tiny \url{marseille-culture13.fr}, PHP, Symphony 2}}
 \cventry{2010}{Développeur}{EPSI}{Bordeaux}{Stage 7 semaines}{Développement d'une application de gestion des absences et des notes pour les enseignants {\tiny -- PHP, JavaScript}}
+\section{Compétences principales}
+\cvitem{Langages}{Java, Kotlin, Rust, Erlang, Python 3, JavaScript, TypeScript, C++, HTML/CSS, SQL}
+\cvitem{Divers}{Kubernetes, Docker, Git, AWS, NodeJS, ElasticSearch, Jenkins, RabbitMQ, Spacemacs}
+\cvitem{O.S.}{Gentoo \& Funtoo, ArchLinux, Debian, CentOS, Ubuntu}
+\cvitem{Pratiques}{TDD, Clean Code}
+\cvitemwithcomment{Anglais}{\mdseries Documentation technique, lu, écrit, TOEIC}{Bonne compréhension à l'écrit}
+\section{Formation}
+\cventry{2012--2015}{EPSI}{Bordeaux}{}{Expert en Informatique et Systèmes d'Information}{}
+\cventry{2012}{BTS Informatique de Gestion}{EPSI Bordeaux}{}{}{}
 \section{Centres d'intérêt}
-\cvitem{Sports}{Planche à voile, VTT, Vélo, Escalade, Randonnées}
+\cvitem{Sports}{Escalade, Randonnées}
 \cvitem{Lectures}{Veille technologique, romans d'heroic fantasy, ouvrages informatiques}
 \cvitem{Informatique}{Jeux vidéo, programmation}
 \end{document}
