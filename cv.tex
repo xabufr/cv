@@ -65,21 +65,22 @@
         \item Gestion de plusieurs navigateurs (phantomJS/SlimerJS, Electron, Google Chrome + DevTools protocol), 
         \item Création d'un langage dédié pour faciliter l'écriture des scénarios de scraping basé sur JSON/Javascript,
         \item Création d'une interface d'édition et de test de scripts avec Electron,
-        \item Création d'une plateforme SaaS avec versionning des scénarios de scraping, gestion des récurrences pour des lancements programmés, des notifications via webhooks, API documentée avec Swagger, interface web en Polymer 1.0, authentification OAuth2/JWT {\tiny AWS, AWS EC2, AWS Lambda, Kubernetes, beanstalkd, Java/Spring Boot}
+          {\item Création d'une plateforme SaaS avec versioning des scénarios de scraping, gestion des récurrences pour des lancements programmés, des notifications via webhooks,
+            API documentée avec Swagger, interface web en Polymer 1.0, authentification OAuth2/JWT {\tiny AWS, AWS EC2, AWS Lambda, Kubernetes, beanstalkd, Java/Spring Boot, S3}}
         \end{itemize}
       }
       {\item Création de la version 2 de la plate-forme KeepAlert.
         \\
-        KeepAlert étant trop vieillissant en terme d'interface que de capacités de récupération des données une refonte complète a été entamée.
+        KeepAlert étant trop vieillissant en terme d'interface et de capacités de récupération des données une refonte complète a été entamée.
         Bien que menée à bien et fonctionnelle en interne, cette nouvelle version n'est jamais sortie par manque de moyens.
         \\
         Étant le seul développeur disponible à ce moment là, j'ai assumé la quasi-totalité des développements/administration système/architecture à l'exception de l'interface web.
-        {\tiny -- Java 8, Kotlin, RabbitMQ, Spring Boot, Sprint Integration, Cloud AWS (S3, EC2, VPC, ElasticIP, LoadBalancer, EKS, ECR), Docker, Kubernetes, Elasticsearch, Postgresql, Jenkins/fabric8}
+        {\tiny -- Java 8, Kotlin, RabbitMQ, Spring Boot, Sprint Integration, Cloud AWS (S3, EC2, VPC, ElasticIP, LoadBalancer, EKS, ECR), Docker, Kubernetes, Elasticsearch, Postgresql, Jenkins/fabric8, Grafana, Prometheus}
         \begin{itemize}
         \item Architecture en micro-services pour faciliter la répartition des charges au sein d'un cluster et utiliser les technologies les plus adaptées en fonction des services,
         \item Utilisation de RabbitMQ pour une communication inter-service fiable et asynchrone,
-        \item Utilisation de Kubernetes via kube-aws puis KOPS, spot instances sur AWS EC2,
-        \item Mise en place d'Elasticsearch 2 sur un cluster Kubernetes,
+        \item Utilisation de Kubernetes via kube-aws puis KOPS et spot instances sur AWS EC2,
+        \item Mise en place d'Elasticsearch 2.x sur un cluster Kubernetes,
         \item Mise en place de centralisation des logs sur Kubernetes,
         \item Mise en place de l'intégration/déploiement continu grâce à Jenkins et Fabric8,
         \item Écriture des micro-services en Java 8/Kotlin/Spring Boot/Spring Integration/Spring Security, Ruby, Python, Test-Driven Developpment,
@@ -92,13 +93,13 @@
 \cventry{2013--2015}{Développeur en alternance}{Systonic}{}{KeepAlert \& Prodomaines}{Réalisation de nombreux projets\@:
 \begin{itemize}
     \item Rédaction d'un article pour ``Programmez!'' (\textnumero170--171) sur l'utilisation des annotations et de l'introspection en Java pour la génération de documents Excel à partir d'un modèle Java,
-    \item Développement d'une solution OCR pour extraction de données textuelles {\tiny -- Bash, gOCR},
+    \item Développement d'une solution OCR pour extraction automatisée de données textuelles {\tiny -- Bash, gOCR},
     \item Création d'un système de classification de domaines/site web avec machine learning en Java 7/Mallet,
     \item Amélioration du parsing des données Whois grâce à la bibliothèque ruby whois-parser et JRuby pour l'utiliser avec le code existant Java 7,
     \item Amélioration du système de capture d'écran de site web grâce au navigateur headless PhantomJS,
     \item Modernisation des outils utilisés par l'équipe de développement (SVN vers Git, Ant vers Maven, intégration continue avec Jenkins),
-    \item Migration de la production des études KeepAlert dans le Cloud d'Amazon grâce à Hadoop pour en accélérer la production et permettre de récolter plus de données {\tiny -- Java, Hadoop, ElasticSearch},
-    \item Écriture d'un service dédié à l'orchestration des clusters Hadoop sur AWS afin d'en optimiser l'utilisation et les coûts {\tiny Java/DropWizard/MySQL/Angular 1},
+    \item Migration de la production des études KeepAlert dans le Cloud d'Amazon grâce à Hadoop pour en accélérer la production, améliorer la fiabilité et permettre de récolter plus de données {\tiny -- AWS EMR, Java, Hadoop, ElasticSearch},
+    \item Écriture d'un service dédié à l'orchestration des clusters EMR/Hadoop sur AWS afin d'en optimiser l'utilisation et les coûts {\tiny Java/DropWizard/MySQL/Angular 1},
     \item Passage d'un stockage de données SQL vers un stockage Elasticsearch 1.X afin d'augmenter le nombre de champs disponibles ainsi que les possibilités de recherche,
     \item Développement d'API RESTful accessibles en lecture pour les extranets KeepAlert \& Prodomaines {\tiny Java, DropWizard},
 \end{itemize}
