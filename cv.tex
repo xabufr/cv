@@ -46,35 +46,32 @@
 }
 \cventry{2018--2019}{Développeur fullstack}{Corporama}{}{}{Développement et maintenance de Corporama -- {\tiny Erlang/OTP, jQuery, Peer-review }
   \begin{itemize}
-  \item Développement de nouvelles fonctionnalités, maintenance et correction d'anomalies
-  \item Support client
+  \item Développement de nouvelles fonctionnalités, maintenance et correction d'anomalies, support client
   \item Début de mise en place de machine learning/NLP avec Spacy
   \end{itemize}
 }
-\cventry{2015--2018}{Développeur, Responsable recherche et développement}{Systonic}{}{KeepAlert}{Missions diverses
+\cventry{2015--2018}{Développeur, Responsable recherche et développement}{Systonic}{}{KeepAlert -- Plateforme SaaS de surveillance de marques sur Internet}{Missions diverses, réalisées seul et en autonomie
 \begin{itemize}
     \item Amélioration et maintenance d'un outil interne de facturation {\tiny -- Java, Everwin}
-    \item Début de moteur de recherche d'image (Content Based Image Retrieving) {\tiny -- C++/OpenCV, Python},
+    \item R\&D sur un moteur de recherche d'image (Content Based Image Retrieving) orienté logo {\tiny -- C++/OpenCV, Python},
     \item R\&D sur les patterns de noms de domaines pour améliorer les taux de détection de KeepAlert (tentative de publication d'un papier de recherche dans une revue scientifique) {\tiny Hadoop, C++},
-      {\item Écriture d'un moteur de web-scraping
+      {\item Création d'un moteur de web-scraping et d'une plateforme SaaS associée
         --
         Utilisé par KeepAlert pour la récupération de données sur les réseaux sociaux, les boutiques en ligne, les moteurs de recherche et tout autre site web ne fournissant pas d'API satisfaisante.
         {\tiny Typescript, NodeJS}
         \begin{itemize}
         \item Gestion des sites dynamiques, des évènements asynchrones, du parallélisme, des captchas\ldots
-        \item Gestion de plusieurs navigateurs (phantomJS/SlimerJS, Electron, Google Chrome + DevTools protocol), 
+        \item Gestion de plusieurs navigateurs (PhantomJS/SlimerJS, Electron, Google Chrome), 
         \item Création d'un langage dédié pour faciliter l'écriture des scénarios de scraping basé sur JSON/Javascript,
         \item Création d'une interface d'édition et de test de scripts avec Electron,
           {\item Création d'une plateforme SaaS avec versioning des scénarios de scraping, gestion des récurrences pour des lancements programmés, des notifications via webhooks,
-            API documentée avec Swagger, interface web en Polymer 1.0, authentification OAuth2/JWT {\tiny AWS, AWS EC2, AWS Lambda, Kubernetes, beanstalkd, Java/Spring Boot, S3}}
+            API documentée avec Swagger, interface web en Polymer 1.0, authentification OAuth2/JWT {\tiny AWS, AWS EC2, AWS Lambda, Kubernetes, beanstalkd, Java/Spring Boot, NodeJS, Typescript, Polymer, S3}}
         \end{itemize}
       }
       {\item Création de la version 2 de la plate-forme KeepAlert.
         \\
         KeepAlert étant trop vieillissant en terme d'interface et de capacités de récupération des données une refonte complète a été entamée.
-        Bien que menée à bien et fonctionnelle en interne, cette nouvelle version n'est jamais sortie par manque de moyens.
-        \\
-        Étant le seul développeur disponible à ce moment là, j'ai assumé la quasi-totalité des développements/administration système/architecture à l'exception de l'interface web.
+        Bien que menée à bien et fonctionnelle en interne, cette nouvelle version n'a jamais été publiée par manque de moyens.
         {\tiny -- Java 8, Kotlin, RabbitMQ, Spring Boot, Sprint Integration, Cloud AWS (S3, EC2, VPC, ElasticIP, LoadBalancer, EKS, ECR), Docker, Kubernetes, Elasticsearch, Postgresql, Jenkins/fabric8, Grafana, Prometheus}
         \begin{itemize}
         \item Architecture en micro-services pour faciliter la répartition des charges au sein d'un cluster et utiliser les technologies les plus adaptées en fonction des services,
@@ -86,6 +83,7 @@
         \item Écriture des micro-services en Java 8/Kotlin/Spring Boot/Spring Integration/Spring Security, Ruby, Python, Test-Driven Developpment,
         \item Intégration des services avec Zipkin (distributed tracing),
         \item Sécurisation OAuth/JWT,
+        \item Encadrement du stagiaire développant l'interface web,
         \end{itemize}
       }
 \end{itemize}
@@ -94,7 +92,7 @@
 \begin{itemize}
     \item Rédaction d'un article pour ``Programmez!'' (\textnumero170--171) sur l'utilisation des annotations et de l'introspection en Java pour la génération de documents Excel à partir d'un modèle Java,
     \item Développement d'une solution OCR pour extraction automatisée de données textuelles {\tiny -- Bash, gOCR},
-    \item Création d'un système de classification de domaines/site web avec machine learning en Java 7/Mallet,
+    \item R\&D pour un système de classification de domaines/site web avec machine learning en Java 7/Mallet,
     \item Amélioration du parsing des données Whois grâce à la bibliothèque ruby whois-parser et JRuby pour l'utiliser avec le code existant Java 7,
     \item Amélioration du système de capture d'écran de site web grâce au navigateur headless PhantomJS,
     \item Modernisation des outils utilisés par l'équipe de développement (SVN vers Git, Ant vers Maven, intégration continue avec Jenkins),
